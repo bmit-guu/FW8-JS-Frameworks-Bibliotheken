@@ -1,0 +1,58 @@
+/* Grundlegende Stilregeln für die Anwendung */
+
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #282c34; /* Hintergrundfarbe beibehalten */
+    color: white; /* Textfarbe beibehalten */
+    text-align: center;
+  }
+  
+  main {
+    border: 3px solid #3de904; /* Rahmenstil beibehalten */
+    padding: 2em;
+    border-radius: 15px; /* Abgerundete Ecken beibehalten */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Schatten beibehalten */
+  }
+  
+  h1 {
+    font-size: 4.5rem; /* Schriftgröße für Titel beibehalten */
+    margin-bottom: 0.5rem;
+    animation: fadeIn 5s; /* Animation beibehalten */
+  }
+  
+  .name {
+    font-weight: bold;
+    color: #f00; /* Farbe für den Namen beibehalten */
+    padding-bottom: 1em;
+  }
+  
+  p {
+    font-size: 3.2rem; /* Schriftgröße für Text beibehalten */
+    color: #adbac7; /* Textfarbe beibehalten */
+  }
+  
+  /* Keyframes für FadeIn-Animation beibehalten */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design für kleinere Bildschirme angepasst */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2rem; /* Angepasste Schriftgröße für Mobilgeräte */
+    }
+    p {
+      font-size: 1.5rem; /* Angepasste Schriftgröße für Mobilgeräte */
+    }
+  }
+  
+  
